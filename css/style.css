@@ -126,6 +126,7 @@ section article img {
 
 section article h4 {
   margin-bottom: 5px;
+  font-weight: 400;
 }
 
 section > article.art-left, section > article.art-right {
@@ -142,6 +143,7 @@ section > article.art-mid {
 div.container footer {
   text-align: center;
   margin-top: -15px;
+  margin-bottom: 15px;
 }
 
 div.container footer span::after {
