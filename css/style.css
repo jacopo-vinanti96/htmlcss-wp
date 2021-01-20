@@ -57,7 +57,7 @@ div.overlay {
   right: 0;
 }
 
-div.overlay, img {
+div.overlay, img:not(:first-of-type) {
   border-radius: 10px;
 }
 
@@ -94,6 +94,10 @@ div.hero div.hero-text h2 {
 }
 
 /* Articles section settings */
+section .lesser-title {
+  margin-bottom: 20px;
+}
+
 section .lesser-title h3 {
   font-size: 30px;
 }
