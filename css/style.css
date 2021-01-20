@@ -15,8 +15,26 @@ div.container > * {
 }
 
 div.container > header {
-  height: 15vh;
-  background-color: #E579E6;
+  margin-top: 0;
+}
+
+div.container header img {
+  width: 13vw;
+  border-right: 1.5px solid #a4a4a4;
+  padding-right: 1vw;
+  margin-bottom: 5vh;
+}
+
+header nav li {
+  display: inline-block;
+  margin-right: 1.25vw;
+}
+
+header nav li a {
+  color: #858585;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.2vw;
 }
 
 div.container > div.hero {
