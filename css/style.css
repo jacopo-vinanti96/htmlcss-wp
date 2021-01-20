@@ -1,3 +1,4 @@
+/* Global settings */
 * {
   padding: 0;
   margin: 0;
@@ -43,16 +44,12 @@ header nav li a {
   font-size: 16px;
 }
 
-/* Hero settings */
-div.container main > div.hero {
-  position: relative;
-}
-
-div.hero div.overlay {
+/* Overlay and img global settings */
+div.overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.15);
   z-index: 2;
   top: 0;
   bottom: 0;
@@ -60,12 +57,20 @@ div.hero div.overlay {
   right: 0;
 }
 
+div.overlay, img {
+  border-radius: 10px;
+}
+
+/* Hero settings */
+div.container main > div.hero {
+  position: relative;
+}
+
 div.hero img {
   width: 100%;
   height: 450px;
   object-fit: cover;
   margin-bottom: -4px;
-  /* min-height: 34.5vw; */
 }
 
 div.hero div.hero-text {
@@ -81,29 +86,42 @@ div.hero div.hero-text h2 {
   font-weight: 400;
 }
 
-/* Articles section settings */
-div.container main > section {
-  background-color: #0186FE;
-}
-
+/* Clearfix */
 .clearfix::after {
   content: '';
   display: block;
   clear: both;
 }
 
-section > div.lesser-title {
-  height: calc(60vh * 0.2);
-  background-color: #ABCFE7;
+/* Articles section settings */
+section .lesser-title h3 {
+  font-size: 30px;
+}
+
+section .lesser-title p, section article p {
+  color: #929292;
 }
 
 section > article {
-  height: calc(60vh * 0.76);
-  background-color: #ABCFE7;
   float: left;
   margin-top: 2%;
   margin-bottom: 2%;
-  /* color: #929292; */
+}
+
+section article div.img-sized {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+section article img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: -4px;
+}
+
+section article h4 {
+  margin-bottom: 5px;
 }
 
 section > article.art-left, section > article.art-right {
@@ -116,8 +134,14 @@ section > article.art-mid {
   margin-right: 2%;
 }
 
-div.container > footer {
-  height: 8vh;
-  background-color: #8702FA;
-  margin-top: -2vh;
+/* Footer settings */
+div.container footer {
+  text-align: center;
+  margin-top: -15px;
+}
+
+div.container footer span::after {
+  content: " \2665";
+  color: red;
+  font-size: 22px;
 }
