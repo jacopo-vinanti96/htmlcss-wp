@@ -12,7 +12,11 @@ body > div.container {
 }
 
 div.container > * {
-  margin: 4vh 0;
+  margin: 35px 0;
+}
+
+div.container main > * {
+  margin: 35px 0;
 }
 
 /* Header settings */
@@ -21,52 +25,55 @@ div.container > header {
 }
 
 div.container header img {
-  width: 13.5vw;
+  width: 185px;
   border-right: 1.5px solid #E8E8E8;
-  padding-right: 1vw;
-  margin-bottom: 5vh;
+  padding-right: 12px;
+  margin-bottom: 40px;
 }
 
 header nav li {
   display: inline-block;
-  margin-right: 1.25vw;
+  margin-right: 18px;
 }
 
 header nav li a {
   color: #858585;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.2vw;
+  font-size: 16px;
 }
 
 /* Hero settings */
-div.container > div.hero {
-  background-color: #E3D67A;
+div.container main > div.hero {
   position: relative;
 }
 
 div.hero div.overlay {
   position: absolute;
-  width: 80%;
-  height: 34.5vw;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 div.hero img {
-  height: 34.5vw;
   width: 100%;
+  height: 450px;
   object-fit: cover;
-  position: relative;
-  z-index: 1;
+  margin-bottom: -4px;
+  /* min-height: 34.5vw; */
 }
 
 div.hero div.hero-text {
   color: white;
-  width: 40vw;
+  width: 50%;
   position: absolute;
   transform: translate(10%, -150%);
-  font-size: 1.3vw;
+  font-size: 18px;
   z-index: 3;
 }
 
@@ -75,7 +82,7 @@ div.hero div.hero-text h2 {
 }
 
 /* Articles section settings */
-div.container > section {
+div.container main > section {
   background-color: #0186FE;
 }
 
